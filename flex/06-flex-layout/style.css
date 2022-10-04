@@ -7,6 +7,16 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  justify-content: space-between;
+}
+
 img {
   width: 600px;
 }
@@ -16,6 +26,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 0.5rem 0.75rem;
 }
 
 input {
@@ -25,3 +36,72 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration-line: none;
+  color: black;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.footer{
+  background-color: #eeeeee;
+  padding: 0;
+}
+
+.header,
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
+.left-links,
+.right-links{
+  display: flex;
+  gap:0.75rem;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+
+/* # An entire page!
+
+Flexbox is useful for laying out entire pages as well as the smaller components 
+we've already been working with. For this exercise, we're leaving you with a little more work to do, with some things you may not have encountered yet. It's perfectly acceptable to google things you're unsure of!
+
+### Hints
+- You may want to search something like `CSS remove list bullets`.  
+We've done this for you in previous examples, but not here. Yay learning.
+- Finding out how to style links in CSS might help you get 
+rid of that pesky underline decoration...
+- We've added `height: 100vh` to the `body`... this makes the body 
+exactly the same height as the viewport. To stick the footer to the bottom 
+you will need to use flex and change the direction to column.
+
+## Desired Outcome
+![desired outcome](./desired-outcome.png)
+
+### Self Check
+
+- The header is at the top of the page, the footer is at the bottom, 
+and they stay in place if you resize your screen.
+- The header and footer have padding.
+- The links in the header and footer are pushed to either side.
+- There is space between the links in the header and footer.
+- The footer has a light gray background (`#eeeeee`).
+- The logo, input and buttons are centered in the screen.
+- The buttons have an appropriate amount of padding.
+- There is space between the logo, input and buttons. */
